@@ -1,0 +1,177 @@
+body{
+    background-color: skyblue;
+    margin: 0px;
+    display: grid
+
+}
+
+.main{
+    img{
+        margin: 1rem;
+    }
+
+    display: grid;
+    place-items: center;
+
+}
+
+.primary-nav{
+    width: 100%;
+    background-color:steelblue;
+}
+
+a{
+    color: black;
+}
+
+p{
+    padding: 1rem;
+    margin: 0px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+
+    li{
+        list-style: none;
+        margin: 5px;
+    }
+}
+
+.card{
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    gap: 1rem;
+
+    item{
+        margin: 1rem;
+        background-color: aliceblue;
+    }
+
+    img{
+        margin: 1rem;
+    }
+
+    a{
+        margin: 1rem;
+        padding: 1rem;
+        background-color: yellowgreen;
+        border-radius: 15px;
+        margin-top: auto;
+    }
+
+    .item1{
+        grid-row: span 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item2{
+        grid-row: span 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item3{
+        grid-row: span 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+}
+
+.footer-nav{
+    width: 100%;
+    background-color:steelblue;
+}
+
+
+@media (min-width: 65rem){
+
+    .titletext{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        
+        h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    .primary-nav{
+        ul{
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;   
+            padding: 0 12.5%;
+        } 
+    }
+
+
+    .card{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+
+        item{
+            margin: 1rem;
+            background-color: aliceblue;
+        }
+    
+        img{
+            margin: 1rem;
+        }
+    
+        a{
+            margin: 1rem;
+            padding: 1rem;
+            background-color: yellowgreen;
+            border-radius: 15px;
+            margin-top: auto;
+        }
+    
+        .item1{
+            grid-column: span 4;
+            /* 已经分row了，没有覆盖，所以让row占满 */
+            grid-row: span 10;  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .item2{
+            grid-column: span 4;
+            grid-row: span 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .item3{
+            grid-column: span 4;
+            grid-row: span 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .footer-nav{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1rem 12.5%;
+        }
+    }
+}
+

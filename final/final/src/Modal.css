@@ -1,0 +1,15 @@
+.button-container {
+    padding: 1rem 0;
+}
+
+.input-error {
+    border: 1px solid red;
+}
+
+.error-text {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: block;
+} 
+

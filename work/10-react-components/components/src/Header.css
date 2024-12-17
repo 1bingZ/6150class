@@ -1,0 +1,30 @@
+Header {
+    background-color: bisque;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.global-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+li {
+    display: inline;
+}
+

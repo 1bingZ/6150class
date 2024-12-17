@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- h1 img-->
+        <h1><a href="index.html"><img class="h1" src="img/img1.jpg" alt="A Cat"></a></h1>
+
+        <!-- 导航栏 -->
+        <nav class="nav">
+            <div class="dropdown">
+                <div class="menu" tabindex="0">Menu</div>
+                <div class="dropdown-content">
+                    <a href="index.html">Index</a>
+                    <a href="about.html">About us</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="external-links" tabindex="0">External Links</div>
+                <div class="dropdown-content">
+                    <a href="https://en.wikipedia.org/wiki/Cat">Cat Wiki</a>
+                    <a href="https://basepaws.com/cat-breeds">Cat Breeds</a>
+                    <a href="https://mountainhumane.org/adoptable-pet-category/cat/?gad_source=1&gclid=Cj0KCQjwjY64BhCaARIsAIfc7YajWzz4DoiXRo5qVH9eY7FgeJG8oHaLqqAhG8BdaUmH7kVxgEF7yTYaAuI4EALw_wcB">Cat Adoption</a>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+
+        <h2>Register Form</h2>
+
+        <form class="form" action="/submit" method="post">
+
+            <!-- name  -->
+            <div class="personal-information">
+                <label>
+                    name(required): <input type="text" id="name" name="name" required >
+                </label>
+            </div>
+
+            <!-- email -->
+            <div class="personal-information">
+                <label>
+                    email(required): <input type="email" id="email" name="email" required >
+                </label>
+            </div>
+
+            <!-- annoy-me -->
+             <div class="personal-information checkbox-group">
+                <label>
+                    <input type="checkbox" name="annoy-me" id="annoy-me" checked>
+                    Do you want us to send you annoying emails?
+                </label>
+             </div>
+
+             <!-- tier -->
+              <div class="personal-information">
+                <label>
+                    Please select your purpose for visiting this website(required)
+                    <select name="tier" id="tier" required >
+                        <option value="" selected>Please select</option>
+                        <option value="1">I want to learn about cats</option>
+                        <option value="2">I hope to adopt a cat</option>
+                        <option value="3">I want to join this Community</option>
+                    </select>
+                </label>
+              </div>
+
+              <!-- submit -->
+               <div class="submit">
+                <label>
+                    <button type="submit">Register</button>
+                </label>
+               </div>
+
+        </form>
+    </main>
+
+    <footer class="footer">
+        <!-- footer的导航栏 -->
+        <nav class="footer-nav">
+            <ul>
+              <li><a href="privacy policy.html">Privacy Policy</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="other.html">Other</a></li>
+            </ul>
+          </nav>
+    </footer>
+
+</body>
+
+
+</html>

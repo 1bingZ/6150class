@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff5f0;
+    color: rgb(135, 122, 114);
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    display: inline-block; /* 使链接块可以接受宽高 */
+    width: 100%;
+    width: 200px; /* 自定义宽度 */
+    display: block;
+}
+
+a img {
+    width: 100%; /* 图片宽度占满父元素 */
+    display: block; /* 去掉图片底部的空隙 */
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content : space-around;
+
+    
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    width: 8rem;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: left; 
+    align-items: center;  
+}
+
+.dropdown:focus-within .dropdown-content{
+    display: block;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    background-color:  #fff5f0;
+    display: none;
+    position: absolute;
+    top: 70%;       
+    left: 0; 
+    z-index: 1;
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {
+    background-color:#b8c68c;
+}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main {
+    background-color: rgb(247, 252, 244);
+}
+
+.title {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.card item {
+    margin: 1rem;
+    border-radius: 15px;
+
+}
+
+.card img {
+    margin: 1rem;
+    max-width: 100%;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.card a {
+    width: 6rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #b8c68c;
+    border-radius: 15px;
+    margin-top: auto;
+    text-align: center;
+}
+
+.card-title {
+    padding: 0.3rem;
+}
+
+.item1{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f2f0;
+}
+.item2{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #edecec;
+}
+.item3{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dad7d5;
+    background-image: url('img/img2.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.item4{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebe2df;
+    background-image: url('img/img2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item5{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #edecec;
+    background-image: url('img/img2.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.item6{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f2f0;
+}
+.item7{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ede4ea;
+}
+
+.footer {
+    background-color: #fff5f0;
+    color: rgb(135, 122, 114);
+    padding: 0.5rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content : space-around;
+}
+
+li {
+    list-style: none;
+}
+
+.footer-nav a {
+    color: rgb(135, 122, 114);
+}
+
+
+
+
+@media (max-width: 52rem ){
+    .item1, .item2, .item3 {
+        grid-column: span 6;
+        grid-row: span 6;
+    }
+
+    .item4, .item5, .item6, .item7 {
+        grid-column: span 6;
+        grid-row: span 6;
+    }
+
+    .footer-nav ul { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+} 
+
+@media (max-width: 30rem) {
+    .dropdown {
+        width: 4rem; 
+    }
+
+    .item1, .item2, .item3 {
+        grid-column: span 12;
+        grid-row: span 4;
+    }
+
+    .item4, .item5, .item6, .item7 {
+        grid-column: span 12;
+        grid-row: span 3;
+    }
+}
+

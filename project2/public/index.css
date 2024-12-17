@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: burlywood;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;        
+}
+
+h1 {
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    padding: 8px 16px;
+}
+
+.skip-link:focus {
+    top: 0;     
+}
+
+.h1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+
+.header a img {
+    width: 100px;
+    height: 100px;
+    display: block; 
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content : space-around;
+    align-items: center;
+}
+
+.hamburger {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    border: none; 
+    background: none;
+    position: relative;
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 0;
+}
+
+
+.main {
+    background-color: papayawhip;
+    padding: 1rem;
+}
+
+.title {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.panel {
+    margin: 1rem;
+    border: solid;
+    border-width: thin;
+    display: flex;
+    flex-direction: row;
+}
+
+.panel div {
+    margin: 0.5rem;
+}
+
+.panel h2 {
+    text-align: center;
+}
+
+.panel .pic {
+    width: 200px;
+    height: 200px;
+    padding: 0.5rem;
+    flex-shrink: 0;
+}
+
+.subscribe {
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+}
+
+.footer {
+    background-color: burlywood;
+    padding: 0.5rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content : space-around;
+}
+
+li {
+    list-style: none;
+}
+
+.mobile-menu li a:hover, .nav a:hover, .footer-nav ul li a:hover {
+    background-color: dodgerblue;
+}
+
+
+
+@media (min-width: 44rem ){
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 44rem ){
+    .nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-menu[aria-hidden="true"] {
+        display: none;
+    }
+
+    .mobile-menu {
+        flex-direction: column;
+        display: flex;
+    }
+    
+    .card item {
+        grid-column: span 12;
+        grid-row: span 2;
+    }     
+
+    .panel .pic {
+        width: 125px;
+        height: 125px; 
+    }
+
+    .footer-nav ul { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+
+} 
+
+
+
+

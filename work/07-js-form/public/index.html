@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./index.js"></script>
+</head>
+
+
+<body>
+    <!-- h1 -->
+    <head>
+        <h1>Registration Form</h1>
+    </head>
+
+    <main class="main">
+        <form class="form" action="/submit" method="post">
+
+            <!-- name  -->
+            <div class="personal-information name">
+                <label>
+                    name(required): <input type="text" id="name" name="name" required >
+                </label>
+            </div>
+
+            <!-- email -->
+            <div class="personal-information email">
+                <label>
+                    email(required): <input type="email" id="email" name="email" required>
+                </label>
+            </div>
+
+             <!-- confirm email -->
+             <div class="personal-information confirm-email">
+                <label>
+                    please confirm email(required): <input type="email" id="email" name="email" required>
+                </label>
+            </div>
+
+            <!-- wants-spam？ -->
+             <div class="personal-information spam">
+                <label>
+                    <input type="checkbox" name="spam" id="spam" checked>
+                    Do you want us to send you emails?
+                </label>
+             </div>
+
+             <!-- tier -->
+              <div class="personal-information tier">
+                <label>
+                    Plesae select a tier(required)
+                    <select name="tier" id="tier" required>
+                        <option value="" selected>Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </label>
+              </div>
+
+              <!-- submit -->
+               <div class="submit">
+                <label>
+                    <button type="submit">Register</button>
+                </label>
+               </div>
+
+        </form>
+    </main>
+
+
+    <!-- Visually footer -->
+    <footer>
+        <p><a href="">privacy policy</a></p>
+    </footer>
+
+
+</body>
+</html>

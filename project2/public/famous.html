@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Cats</title>
+    <link rel="stylesheet" href="famous.css"/>
+    <script defer src="scrip.js"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <!-- logo img-->
+            <a href="index.html"><img class="h1" src="./img/logo1.jpg" alt="A Cat logo"></a>
+
+            <!-- skip button & h1 text -->
+            <div class="h1-container">
+                <a href="#main-content" class="skip-link">Skip to Main Content</a>
+                <h1>Cats Power the Internet</h1>
+            </div>
+
+             <!-- humburger header nav -->
+            <div>
+                <button class="hamburger" aria-label="Toggle Menu">&#9776</button>
+                <nav class="mobile-nav">
+                    <ul class="mobile-menu" aria-hidden="true">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="famous.html">Famous Cats</a></li>
+                        <li><a href="#">Cats Events</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+       
+         <!-- header nav -->
+         <nav class="nav">
+            <a href="index.html">home</a>
+            <a href="famous.html">Famous Cats</a>
+            <a href="#">Cats Events</a>
+        </nav>
+
+        
+
+    </header>
+
+
+    <main class="main">
+        <div class="grid-container">
+            
+            <!-- card栏 -->
+            <div class="card" id="main-content">
+                <item class="item">
+                    <h2>Jorts</h2>
+                    <img src="img/card4.jpg" alt="Jorts">
+                    <p> 
+                        Dolor nulla repellendus quisquam optio in. In optio distinction
+                        <br><br>
+                        Ipsum lorem sit <button class="subscribe">Subscribe</button> voluptate inventore.
+                    </p>
+                </item>
+
+                <item class="item">
+                    <h2>Jean</h2>
+                    <img src="img/card5.jpg" alt="Jean">
+                    <p>
+                        Dolor nulla repellendus quisquam optio in. In optio distinction
+                        <br><br>
+                        Dolor nulla repellendus quisquam optio in. In optio distinction
+                        <br><br>
+                        Ipsum lorem sit <button class="subscribe">Subscribe</button> voluptate inventore.
+                    </p>
+                </item> 
+
+                <item class="item">
+                    <h2>Maru</h2>
+                    <img src="img/card6.jpg" alt="Maru">
+                    <p>
+                        Dolor nulla repellendus quisquam optio in. In optio distinction
+                        <br><br>
+                        Ipsum lorem sit <button class="subscribe">Subscribe</button> voluptate inventore.
+                    </p>
+                </item>
+
+                <item class="item">
+                    <h2>Nyancat</h2>
+                    <img src="img/card7.jpg" alt="Nyancat">
+                    <p>
+                        Dolor nulla repellendus quisquam optio in. In optio distinction
+                        <br><br>
+                        Ipsum lorem sit <button class="subscribe">Subscribe</button> voluptate inventore.
+                    </p>
+                </item>
+
+                <item class="item">
+                    <h2>Grumpy Cat</h2>
+                    <img src="img/card8.jpg" alt="Grumpy Cat">
+                    <p>
+                        Dolor nulla repellendus quisquam optio in. In optio distinction
+                        <br><br>
+                        Ipsum lorem sit <button class="subscribe">Subscribe</button> voluptate inventore.
+                    </p>
+                </item>
+
+                <item class="item">
+                    <h2>Lil Bub</h2>
+                    <img src="img/card9.jpg" alt="Lil Bub">
+                    <p>
+                        Dolor nulla repellendus quisquam optio in. In optio distinction
+                        <br><br>
+                        Ipsum lorem sit <button class="subscribe">Subscribe</button> voluptate inventore.
+                    </p>
+                </item>
+            </div>
+
+        </div>
+        
+
+    </main>
+
+
+    <footer class="footer">
+        <!-- footer的导航栏 -->
+        <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Other</a></li>
+            </ul>
+          </nav>
+    </footer>
+
+    <!--Modal-->
+    <div class="modal" aria-hidden="true">
+        <div class="'modal-content">
+            <form class="subscribe-form" action="/subscribe" method="POST">
+                <h3>Subscribe to the Latest Mews!</h3>
+                
+                <!--Email-->
+                <label class="subscribe_label">
+                    <span>Email: <em>*required</em></span>
+                    <input id="email" name="email" class="email">
+                    <div class="email_error"></div>
+                </label>
+                
+                <!--Confirm email-->
+                <label class="subscribe_label">
+                    <span>Confirm Email: <em>*required</em></span>
+                    <input id="confirm" name="confirm" class="confirm">
+                    <div class="confirm_error"></div>
+                </label><br>
+                <div class="button-container">
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                    <button type="button" class="cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    background-color: aliceblue;
+}
+
+
+h1 {
+    margin: 0rem;
+    background-color: skyblue;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+.main {
+    margin: 2rem 0 2rem 0;
+    padding: 2rem;
+    border-radius: 25px;
+    background-color: rgb(205, 233, 244);
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.personal-information {
+    padding: 0.5rem;
+}
+
+
+input[type="text"], input[type="email"], select, button {
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: skyblue; 
+}
+
+
+input:focus, select:focus, button:focus{
+    background-color: greenyellow;
+}
+
+
+button{
+    background-color: skyblue;
+}
+
+
+.submit {
+    padding: 0.5rem;
+}
+
+
+footer {
+    margin: 2.5rem;
+}
+
+
+p {
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+
+
+a {
+    padding: 0.5rem;
+    background-color: skyblue;
+    border-radius: 10px;
+
+}
+
+a:focus{
+    background-color: greenyellow;
+}
+
+
+/* （600px） */
+@media (max-width: 600px) {
+    label{
+        display: flex;
+        flex-direction: column; 
+        text-align: left;
+    } 
+
+
+    .checkbox-group label {
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+}
+
+

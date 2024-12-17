@@ -1,0 +1,29 @@
+h2 {
+    padding: 1rem;
+}
+
+h3 {
+    padding: 1rem;
+    color: rgb(115, 143, 74);
+}
+
+.donate p {
+    text-indent: 2em;
+    padding: 0 2rem;
+}
+
+
+/* panel */
+.panel {
+    margin: 1rem;
+    border: solid;
+    border-width: thin;
+    display: flex;
+    flex-direction: row;
+}
+
+.panel div {
+    margin: 0.5rem;
+}
+
+

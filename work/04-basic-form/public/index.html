@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- h1 -->
+    <head>
+        <h1>Registration Form</h1>
+    </head>
+
+    <main class="main">
+        <form class="form" action="/submit" method="post">
+
+            <!-- name  -->
+            <div class="personal-information">
+                <label>
+                    name(required): <input type="text" id="name" name="name" required oninvalid="this.setCustomValidity('Enter User Name Here')"
+                    oninput="this.setCustomValidity('')" >
+                </label>
+            </div>
+
+            <!-- email -->
+            <div class="personal-information">
+                <label>
+                    email(required): <input type="email" id="email" name="email" required 
+                    oninvalid="this.setCustomValidity('Enter User Email Here')"
+                    oninput="this.setCustomValidity('')" >
+                </label>
+            </div>
+
+            <!-- annoy-me -->
+             <div class="personal-information checkbox-group">
+                <label>
+                    <input type="checkbox" name="annoy-me" id="annoy-me" checked>
+                    Do you want us to send you annoying emails?
+                </label>
+             </div>
+
+             <!-- tier -->
+              <div class="personal-information">
+                <label>
+                    Plesae select a tier(required)
+                    <select name="tier" id="tier" required 
+                    oninvalid="this.setCustomValidity('Plesae select a tier')"
+                    oninput="this.setCustomValidity('')">
+                        <option value="" selected>Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </label>
+              </div>
+
+              <!-- submit -->
+               <div class="submit">
+                <label>
+                    <button type="submit">Register</button>
+                </label>
+               </div>
+
+        </form>
+
+    </main>
+
+    <!-- Visually footer -->
+    <footer>
+        <p><a href="">privacy policy</a></p>
+    </footer>
+
+</body>
+</html>

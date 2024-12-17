@@ -1,0 +1,81 @@
+#homepage{
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 50px minmax(200px,auto) 50px;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer";
+}
+header{
+    grid-area: header;
+    background-color: plum;
+    
+}
+
+li{
+    padding: 5px 5px;
+    list-style: none;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    margin: 0px;
+    li{
+        padding: 15px;
+    }
+    li:hover{
+        background-color: rebeccapurple;
+        
+        a{
+            color: white;
+        }
+    }
+}
+
+.local-menu{
+    grid-area: nav;
+    background-color: pink;
+
+    ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        li:hover{
+            background-color: plum;
+            
+        }
+        
+    }
+
+    
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: pink;
+    /* add实线; */
+    border-left: 2px solid black;
+    /* add left padding */
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+p{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    background-color: plum;
+}

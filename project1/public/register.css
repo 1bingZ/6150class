@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff5f0;
+    color: rgb(135, 122, 114);
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    display: inline-block; 
+    width: 100%;
+    width: 200px; 
+    display: block;
+}
+
+a img {
+    width: 100%; 
+    display: block; 
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content : space-around;
+
+    
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    width: 8rem;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: left; 
+    align-items: center;  
+}
+
+.dropdown:focus-within .dropdown-content{
+    display: block;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    background-color:  #fff5f0;
+    display: none;
+    position: absolute;
+    top: 70%;       
+    left: 0; 
+    z-index: 1;
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {
+    background-color:#b8c68c;
+}
+
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.main {
+    background-color: rgb(247, 252, 244);
+}
+
+h2 {
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+.form {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+
+.personal-information {
+    grid-row: span 2;
+    padding: 0.5rem;
+}
+
+.submit {
+    grid-row: span 2;
+}
+
+input[type="text"], input[type="email"], select, button {
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: skyblue; 
+}
+
+
+input:focus, select:focus, button:focus {
+    background-color: greenyellow;
+}
+
+
+button {
+    background-color: skyblue;
+}
+
+
+.submit {
+    padding: 0.5rem;
+}
+
+
+.footer {
+    background-color: #fff5f0;
+    color: rgb(135, 122, 114);
+    padding: 0.5rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content : space-around;
+}
+
+li {
+    list-style: none;
+}
+
+.footer-nav a {
+    color: rgb(135, 122, 114);
+}
+
+
+
+
+@media (max-width: 52rem ){
+    
+    .footer-nav ul { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+} 
+
+@media (max-width: 30rem) {
+    .dropdown {
+        width: 4rem; 
+    }
+
+}
+
+
